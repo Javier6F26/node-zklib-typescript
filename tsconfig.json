@@ -1,27 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES2019", // Una versión más moderna para garantizar características actualizadas
-    "module": "CommonJS", // CommonJS es adecuado para Node.js
+    "target": "ES2019", // Código compatible con versiones modernas de Node.js
+    "module": "CommonJS", // Módulo adecuado para entornos Node.js
     "outDir": "./dist", // Carpeta de salida para los archivos compilados
-    "declaration": true, // Generar archivos .d.ts para compatibilidad con TypeScript
-    "declarationMap": true, // Generar mapas para depurar definiciones
-    "sourceMap": true, // Generar mapas de origen para depuración
-    "esModuleInterop": true, // Habilitar la interoperabilidad con módulos ES6
-    "strict": true, // Habilitar todas las verificaciones estrictas
+    "declaration": true, // Generar archivos de declaración para soporte de TypeScript
+    "declarationMap": false, // No generar mapas de depuración para definiciones en producción
+    "sourceMap": false, // No generar mapas de depuración en producción
+    "removeComments": true, // Remover comentarios en el código generado
+    "esModuleInterop": true, // Habilitar interoperabilidad con módulos ES6
+    "strict": true, // Habilitar verificaciones estrictas para mayor robustez
     "skipLibCheck": true, // Ignorar verificaciones de tipos en node_modules
     "baseUrl": "./src", // Base para resolver imports relativos
     "paths": {
-      "@zklib/*": ["*"], // Alias para simplificar imports en src/
-      "@tests/*": ["../test/*"] // Alias para simplificar imports en test/
+      "@zklib/*": ["*"] // Alias para simplificar imports en src/
     }
   },
   "include": [
-    "src/**/*", // Incluir todos los archivos en src/
-    "test/**/*" // Incluir todos los archivos en test/
+    "src/**/*" // Incluir todos los archivos necesarios en src/
   ],
   "exclude": [
     "node_modules", // Excluir dependencias de Node.js
     "dist", // Evitar incluir archivos compilados en el build
-    "**/*.spec.ts" // Opcional: excluir archivos de prueba unitarios
+    "test", // Excluir el código de pruebas
+    "**/*.spec.ts" // Excluir pruebas unitarias
   ]
 }
