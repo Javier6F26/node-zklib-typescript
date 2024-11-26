@@ -1,0 +1,38 @@
+{
+  "name": "node-zklib-typescript",
+  "version": "1.0.0",
+  "description": "A TypeScript adaptation of the lightweight library for connecting to ZKTeco biometric devices.",
+  "main": "dist/zklib.js",
+  "types": "dist/zklib.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javier6f26/node-zklib-typescript.git"
+  },
+  "keywords": [
+    "zkteco",
+    "zklib",
+    "typescript",
+    "node-zklib",
+    "attendance-device",
+    "attendance",
+    "biometric-device",
+    "typescript-zklib"
+  ],
+  "author": "javier6f26",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javier6f26/node-zklib-typescript/issues"
+  },
+  "homepage": "https://github.com/javier6f26/node-zklib-typescript#readme",
+  "dependencies": {
+    "@types/node": "^18.17.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^18.17.0"
+  }
+}

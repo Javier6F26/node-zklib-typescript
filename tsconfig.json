@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "declaration": true,
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@zklib/*": [
+        "*"
+      ],
+      "@tests/*": [
+        "../test/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
